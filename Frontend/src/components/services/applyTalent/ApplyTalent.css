@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: transparent;
+}
+
+.apply-container {
+  background-image: url(../../../assets/images/applyTalent.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: start;
+  position: relative;
+  opacity: 1;
+}
+
+.apply-content {
+  background: linear-gradient(
+    to right,
+    rgba(250, 188, 19, 0.8),
+    rgba(235, 233, 233, 0.7)
+  ); /* Adjust opacity for better readability */
+  width: 50%;
+  padding: 8%;
+  opacity: 0.9;
+  z-index: 2;
+  /* margin-top: 5%; */
+  position: relative;
+}
+
+.apply-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.apply-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #122233;
+  position: relative;
+  z-index: 2;
+  font-weight: 600; /* Control the overall container opacity */
+}
+
+.apply-title {
+  color: #1a2e44;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  text-align: start;
+}
+
+.apply-description {
+  color: #1a2e44;
+  font-size: 1rem;
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Upload CV Section */
+.upload-container {
+  padding: 2rem;
+  background-color: rgb(219, 217, 217);
+}
+
+.upload-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a2e44;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.upload-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; /* Control the overall container opacity */
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  position: relative;
+  flex-basis: 30%;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f2981b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  position: relative;
+  margin-left: 45%;
+}
+
+.step-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 26rem;
+  height: 2px;
+  background-color: #f2981b;
+  transform: translateY(-50%);
+  margin-left: 15px;
+}
+
+.step:nth-child(3) .step-icon::after {
+  display: none;
+}
+
+.step-content {
+  font-size: 1.1rem;
+  margin: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.step-content h3 {
+  color: #1a2e44;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #3f3e3e;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .apply-heading {
+    margin-top: 5%;
+  }
+
+  .apply-content {
+    width: 100%;
+    padding: 6%;
+  }
+
+  .upload-title {
+    text-align: start;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .upload-steps {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .step {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-basis: 100%;
+    margin-left: 0;
+  } /* Control the overall container opacity */
+
+  .step-icon {
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .step-icon::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    background-color: #f2981b;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .step:last-child .step-icon::after {
+    display: none !important;
+  }
+
+  .step-content {
+    padding-left: 0;
+  }
+
+  .step-content h3 {
+    margin-bottom: 0.8rem;
+  }
+}

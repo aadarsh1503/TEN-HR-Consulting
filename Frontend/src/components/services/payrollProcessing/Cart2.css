@@ -1,0 +1,176 @@
+.payroll-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.Payroll-header {
+    margin-bottom: 50px;
+}
+
+.h1 {
+    color: #1a237e;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.feature-box {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 220px;
+}
+
+.feature-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feature-box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.blue {
+    background-color: #1a237e;
+    color: white;
+}
+
+.gray {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dashboard-image {
+    flex: 0 0 35%;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-button {
+    background-color: #ffbd59;
+    color: #1a237e;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.contact-button:hover {
+    background-color: #ffa726;
+}
+
+.contact-button .arrow {
+    margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .payroll-services {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        width: 100%;
+    }
+
+    .dashboard-image {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box {
+        height: auto;
+    }
+
+    .feature-box h2 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 13px;
+    }
+
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .feature-box h2 {
+        font-size: 16px;
+    }
+
+    .feature-box p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,126 @@
+.payroll-expertise {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+
+.payroll-expertise header {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.payroll-expertise h1 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.feature-grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.checkmark {
+  top: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffbd59;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.feature-card h3 {
+  color: #1e3a8a;
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.feature-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+  line-height: 1.4;
+}
+
+.feature-card li::before {
+  content: "•";
+  color: #ffbd59;
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .feature-grid {
+    width: 92.5%;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .payroll-expertise h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-grid {
+    width: 95%;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .payroll-expertise h1 {
+    font-size: 1rem;
+  }
+
+  .checkmark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .feature-card h3 {
+    font-size: 15px;
+  }
+
+  .feature-card li {
+    font-size: 12px;
+  }
+}

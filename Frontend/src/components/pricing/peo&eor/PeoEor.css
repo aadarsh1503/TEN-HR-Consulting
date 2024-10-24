@@ -1,0 +1,300 @@
+.peo-container {
+  width: 100%;
+  height: auto;
+}
+
+.peo-pricing {
+  width: 100%;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.peo-pricing h2 {
+  opacity: 70%;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+}
+
+.peo-pricing h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.peo-pricing-cards {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.peo-pricing-card {
+  width: 49%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.peo-pricing-card h3 {
+  color: #002863;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.peo-pricing-card-price {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.peo-pricing-card-price h3 {
+  text-align: start;
+  padding: 0;
+  line-height: 2.5rem;
+}
+
+.peo-pricing-card-price h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #7a7979;
+}
+
+.peo-pricing-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 2rem;
+  color: #002863;
+}
+
+.peo-pricing-card ul {
+  font-size: 1.25rem;
+  list-style: none;
+}
+
+.peo-pricing-card ul li {
+  position: relative;
+  padding-left: 4rem;
+  line-height: 2rem;
+  color: #7a7979;
+}
+
+.peo-pricing-card ul li::before {
+  content: "✔";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  margin-left: 2rem;
+}
+
+.peo-pricing-btn {
+  width: 20%;
+  text-align: center;
+  background-color: #e79522;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+.peo-pricing-btn:hover {
+  background-color: #db8d21;
+}
+
+/*                                      Resources and Articles Styles */
+.peo-resources {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.peo-resources h2 {
+  color: #e79522;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.peo-resources h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #002863;
+}
+
+.peo-resource-cards {
+  width: 80%;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.peo-resource-card {
+  width: 32%;
+}
+
+.peo-resource-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.peo-resource-card-btn {
+  margin: 10px 0 10px 10px;
+}
+
+.peo-resource-article-btn {
+  margin-right: 5px;
+}
+
+.peo-resource-article-btn,
+.peo-resources-btn {
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: #d9d9ee;
+}
+
+.peo-resource-card-text {
+  padding: 10px;
+}
+
+.peo-resource-card-text h4 {
+  font-weight: 500;
+}
+
+.peo-resource-card-text p {
+  margin-top: 15px;
+  color: #86868a;
+}
+
+.peoResource-btn {
+  width: 10%;
+  text-align: center;
+  background-color: #e79522;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+}
+
+.peoResource-btn:hover {
+  background-color: #db8d21;
+}
+
+/*                                    Responsive Styles */
+@media (max-width: 1200px) {
+  .peoResource-btn {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .peo-pricing-cards {
+    width: 90%;
+  }
+
+  .peo-pricing-btn {
+    width: 25%;
+  }
+
+  .peo-resource-cards {
+    width: 95%;
+  }
+
+  .peo-resources h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .peo-pricing-cards {
+    width: 95%;
+  }
+
+  .peo-pricing-card {
+    width: 49%;
+  }
+
+  .peo-pricing-card ul {
+    font-size: 18px;
+  }
+
+  .peo-pricing-card ul li {
+    padding-left: 3.5rem;
+  }
+
+  .peo-pricing-card ul li::before {
+    width: 22px;
+    height: 22px;
+    margin-left: 1.5rem;
+  }
+
+  .peo-pricing-btn {
+    width: 35%;
+    font-size: 1.25rem;
+  }
+
+  .peo-resource-cards {
+    gap: 1rem;
+  }
+
+  .peo-resource-card {
+    width: 48%;
+  }
+
+  .peo-resources h1 {
+    font-size: 1.5rem;
+  }
+
+  .peoResource-btn {
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .peo-pricing h2 {
+    font-size: 1.25rem;
+  }
+
+  .peo-pricing h1 {
+    font-size: 1.5rem;
+  }
+
+  .peo-pricing-cards {
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 2rem;
+  }
+
+  .peo-pricing-card {
+    width: 100%;
+  }
+
+  .peo-resource-card {
+    width: 100%;
+  }
+
+  .peoResource-btn {
+    width: 40%;
+  }
+}

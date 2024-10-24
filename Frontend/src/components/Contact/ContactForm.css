@@ -1,0 +1,205 @@
+.ContactForm {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.contactform-heading{
+  font-weight: bold;
+  font-size: 2rem;
+  align-items: center;
+  margin: 2rem auto;
+  
+}
+
+.contactform-form-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+  margin-top: 0;
+  flex-direction: row;
+}
+
+.contactform-form-section {
+  width: 55%;
+  margin: 0;
+  padding: 2rem;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactform-form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contactform-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.contactform-form-group label {
+  margin-bottom: 5px;
+}
+
+.contactform-form-group input,
+.contactform-form-group select,
+.contactform-form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  top: 100%;
+  z-index: 1;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contactform-form-section .contactform-form-group:not(.contactform-form-row .contactform-form-group) {
+  width: 100%;
+}
+
+.contactform-submit-button {
+  padding: 10px 15px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.contactform-intro-section {
+  width: 50%;
+  padding: 2rem;
+  background-color: #15357a;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.contactform-form-section {
+  max-width: 55%;
+}
+
+.contactform-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactform-form-group {
+  margin-bottom: 20px;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.contactform-form-background {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contactform-submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+b {
+  font-size: 50px;
+}
+
+/* Media query for screens between 768px and 1100px */
+@media screen and (min-width: 766px) and (max-width: 1100px) {
+  .contactform-form-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    overflow: hidden !important;
+    padding: 0; /* Add padding to avoid overlap */
+  }
+
+  .contactform-form-section,
+  .contactform-intro-section {
+    width: 100%;
+    max-width: 100%; /* Full width for medium screens */
+    margin: 0;
+    padding: 1.5rem; /* Adjust padding for spacing */
+    border-radius: 0;
+  }
+
+  .contactform-form-section {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-bottom: 1rem; /* Reduced padding to avoid crowding */
+  }
+
+  .contactform-intro-section {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 1rem; /* Reduce padding for better spacing */
+  }
+
+  .contactform-form-row {
+    flex-direction: column;
+    gap: 1rem; /* Add gap between rows for improved spacing */
+  }
+
+  .contactform-form-group {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1.5rem; /* Adjust margin to improve form appearance */
+  }
+
+  .contactform-submit-button {
+    width: 50%; /* Ensure full width for better appearance */
+    padding: 12px; /* Adjust padding to maintain proportions */
+  }
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 766px) {
+  .contactform-form-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    overflow: hidden !important;
+  }
+
+  .contactform-form-section,
+  .contactform-intro-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 0;
+  }
+  .contactform-form-section{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .contactform-intro-section{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .contactform-form-row {
+    flex-direction: column;
+  }
+
+  .contactform-form-group {
+    width: 100%; 
+    padding-right: 0; 
+  }
+}

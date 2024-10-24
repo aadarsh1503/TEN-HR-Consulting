@@ -1,0 +1,39 @@
+.Contact_sec1 {
+  /* margin-top: 10vh; */
+  background-color: #15357a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+g {
+  padding: 30px;
+  width: 710px;
+  font-weight: lighter;
+}
+.Contact_sec1 {
+  font-size: larger;
+}
+.box1 {
+  border: 0.5px solid #435159;
+  width: 364px;
+  justify-content: center;
+  padding: inherit;
+  height: auto;
+  opacity :88.0%;
+  border-radius: 12px;
+
+}
+.contact_last {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.headiing {
+  padding: 30px 0 0 110px;
+  font-size: 32px;
+}

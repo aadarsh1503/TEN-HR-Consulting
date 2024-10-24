@@ -1,0 +1,116 @@
+/*                                      Resources and Articles Styles */
+.pay-resources {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.pay-resources h1 {
+  font-size: 2rem;
+  color: #002863;
+}
+
+.pay-resource-cards {
+  width: 80%;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pay-resource-card {
+  width: 32%;
+}
+
+.pay-resource-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pay-resource-card-btn {
+  margin: 10px 0 10px 10px;
+}
+
+.pay-resource-article-btn {
+  margin-right: 5px;
+}
+
+.pay-resource-article-btn,
+.pay-resources-btn {
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: #d9d9ee;
+}
+
+.pay-resource-card-text {
+  padding: 10px;
+}
+
+.pay-resource-card-text h4 {
+  font-weight: 500;
+}
+
+.pay-resource-card-text p {
+  margin-top: 15px;
+  color: #86868a;
+}
+
+.payResource-btn {
+  width: 10%;
+  text-align: center;
+  background-color: #e79522;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+}
+
+.payResource-btn:hover {
+  background-color: #db8d21;
+}
+
+.payResource-btn a {
+  text-decoration: none;
+}
+
+/*                                     Responsive Styles 1200px */
+@media (max-width: 1200px) {
+  .payResource-btn {
+    width: 15%;
+  }
+}
+
+/*                                     Responsive Styles 1024px */
+@media (max-width: 1024px) {
+  .pay-resource-cards {
+    gap: 1rem;
+  }
+
+  .pay-resource-card {
+    width: 48%;
+  }
+
+  .pay-resources h1 {
+    font-size: 1.5rem;
+  }
+
+  .payResource-btn {
+    width: 20%;
+  }
+}
+
+/*                                     Responsive Styles 480px */
+@media (max-width: 480px) {
+  .pay-resource-card {
+    width: 100%;
+  }
+
+  .payResource-btn {
+    width: 40%;
+  }
+}
