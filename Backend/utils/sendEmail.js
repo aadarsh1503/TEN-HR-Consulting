@@ -1,13 +1,13 @@
-import nodemailer from "nodemailer"
-import path from "path"
+import nodemailer from "nodemailer";
+import path from "path";
 
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
     user: "mounikavemulapalli289@gmail.com", // Replace with your email
-    pass: "fsdi uykz goxm zglj", // Replace with your email password (use an app password if 2FA is enabled)
+    pass: "fsdi uykz goxm zglj",
   },
-})
+});
 
 // Send the email
 export const sendEmail = async (
@@ -29,13 +29,13 @@ export const sendEmail = async (
         path: `uploads/${resume.filename}`,
       },
     ],
-  }
+  };
   try {
-    const mail = await transporter.sendMail(mailOptions)
+    const mail = await transporter.sendMail(mailOptions);
     if (mail.accepted.length) {
-      return true
-    } else return false
+      return true;
+    } else return false;
   } catch (error) {
-    return false
+    return false;
   }
-}
+};

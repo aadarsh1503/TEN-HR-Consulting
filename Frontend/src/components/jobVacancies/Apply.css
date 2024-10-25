@@ -47,10 +47,10 @@
   width: 65%;
 }
 .Job-headng-description {
-  margin-left: -18%;
+  margin-left: 18%;
 }
 .Job-headng-requirements {
-  margin-left: -18%;
+  margin-left: 18%;
 }
 
 .job-deatils-apply {
@@ -86,9 +86,9 @@
 }
 .custom-list {
   list-style-type: none;
-  padding-left: 20px;
+  padding: 20px;
   color: #435159d6;
-  margin-left: -14%;
+  margin: 14%;
   width: 102%;
 }
 ul.custom-list li::before {
@@ -107,8 +107,8 @@ li {
 .custom-ol {
   list-style-type: decimal;
   color: #435159d6;
-  padding-left: 20px;
-  margin-left: 15%;
+  padding : 20px;
+  margin-left: 5%;
   width: 100%;
 }
 .custom-list .custom-ol li {
@@ -173,7 +173,7 @@ li {
   list-style-type: none;
   padding-left: 20px;
   color: #435159d6;
-  margin-left: -5%;
+  margin-left: 5%;
   width: 102%;
 }
 
@@ -189,7 +189,7 @@ ul.custom-list-point li::before {
   list-style-type: decimal;
   color: #435159d6;
   padding-left: 20px;
-  margin-left: -15%;
+  margin-left: 15%;
   width: 100%;
 }
 .custom-list .custom-ol li {
@@ -429,7 +429,7 @@ ul.custom-list-point li::before {
     row-gap: 17px;
   }
   .custom-list {
-    width: 212%;
+    width: 200%;
   }
   .location-icons {
     width: -7%;
@@ -439,7 +439,7 @@ ul.custom-list-point li::before {
     margin-left: 16% !important;
   }
   .Job-headng-description {
-    width: 289%;
+    width: 200%;
   }
   .Job-headng-requirements {
     width: 289%;
